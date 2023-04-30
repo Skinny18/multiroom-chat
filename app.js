@@ -1,6 +1,8 @@
 var app = require('./config/server');
 
-var server = app.listen(80, function(){
+const port = process.env.PORT || 3000;
+
+var server = app.listen(port, function(){
     console.log('Servidor online');
 })
 
